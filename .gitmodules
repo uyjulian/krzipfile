@@ -5,7 +5,11 @@
 	path = external/minizip
 	url = https://github.com/zlib-ng/minizip-ng.git
 	ignore = dirty
-[submodule "external/zlib"]
-	path = external/zlib
-	url = https://github.com/krkrz/zlib.git
+[submodule "external/minizip_lib"]
+	path = external/minizip_lib
+	url = https://github.com/uyjulian/minizip_lib.git
+	ignore = dirty
+[submodule "external/zlib-ng"]
+	path = external/zlib-ng
+	url = https://github.com/zlib-ng/zlib-ng.git
 	ignore = dirty

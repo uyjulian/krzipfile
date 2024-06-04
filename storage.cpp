@@ -202,7 +202,17 @@ mz_stream_vtbl tvp_mz_stream_vtbl =
 	NULL,
 };
 
-zlib_filefunc_def tvp_zlib_filefunc_def = &tvp_mz_stream_vtbl;
+zlib_filefunc64_def tvp_zlib_filefunc_def =
+{
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	(void *)&tvp_mz_stream_vtbl,
+};
 
 class ZIPStream : public IStream {
 
