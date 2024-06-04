@@ -165,13 +165,9 @@ int32_t tvp_mz_stream_error(void *stream)
 	return MZ_STREAM_ERROR;
 }
 
-void* tvp_mz_stream_create(void **stream)
+void* tvp_mz_stream_create()
 {
 	tvp_mz_stream_t *tvpstream = new tvp_mz_stream_t();
-	if (stream != NULL)
-	{
-		*stream = tvpstream;
-	}
 	return tvpstream;
 }
 
